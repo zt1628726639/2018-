@@ -1,0 +1,330 @@
+.main {
+    width: 100%;
+    height: 400px;
+}
+
+.main-left {
+    width: 50%;
+    height: 400px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.main-left:hover .box-letter {
+    height: 33px;
+    line-height: 33px;
+    width: 100%;
+    display: inline-block;
+    animation: sport2 0.5s;
+    text-align: center;
+}
+
+.main-left input {
+    display: none;
+}
+
+.pic1 {
+    width: 100%;
+    height: 400px;
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    transform: translateX(0);
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+input:checked+.control .image {
+    opacity: 1;
+    transform: translateX(1);
+    transition: all 0.2s;
+}
+
+.dots {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+
+
+/*使用dot设置按钮位置*/
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0px 5px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    background: rgba(190, 190, 190, 0.7);
+    cursor: pointer;
+    /*设置按钮大小以及颜色*/
+}
+
+
+/*input:checked ~ label   ：相邻同胞选择器，选择被勾选的input标签后 所有的label标签［input  和 label标签有共同的父元素］；
+
+input:checked ＋ label   ：相邻同胞选择器，选择被勾选的input标签后 第一个label标签［input  和 label标签有共同的父元素］；
+*/
+
+input#img1:checked~.dots label#dot1,
+input#img2:checked~.dots label#dot2,
+input#img3:checked~.dots label#dot3,
+input#img4:checked~.dots label#dot4,
+input#img5:checked~.dots label#dot5,
+input#img6:checked~.dots label#dot6 {
+    background: rgba(0, 0, 0, 0.7);
+    /*将图片与按钮关联达到点按按钮切换图品的效果*/
+}
+
+.main-right {
+    width: 50%;
+    height: 400px;
+    float: right;
+}
+
+.box-in {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.box-letter {
+    height: 50px;
+    line-height: 50px;
+    bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    background: #333;
+    color: #fff;
+    opacity: 0.6;
+    display: none;
+}
+
+.box-in:hover .box-letter {
+    display: block;
+    width: 100%;
+    text-align: center;
+    animation: sport2 1s;
+}
+
+@keyframes sport2 {
+    0% {
+        transform: translateY(50px);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 0.6
+    }
+}
+
+.text {
+    width: 100%;
+    height: 40px;
+}
+
+.text ul {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.text ul li {
+    width: 20%;
+    /* height: 100%; */
+    float: left;
+    list-style: none;
+    /* line-height: 100%; */
+    font-size: 14px;
+    color: rgb(113, 113, 113);
+    text-align: center;
+}
+
+.text ul li a:hover {
+    text-decoration: underline;
+    color: rgb(113, 113, 113);
+}
+
+.d {
+    text-decoration: none;
+}
+
+.nava {
+    width: 90%;
+    height: 520px;
+    margin: 0 auto;
+}
+
+.ul {
+    width: 100%;
+    height: 50%;
+    list-style-type: none;
+    float: left;
+}
+
+.ul div {
+    font-size: 14px;
+    width: 22%;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 2%;
+    float: left;
+    margin-left: 2.4%;
+}
+
+.ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 270px;
+    height: 165px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ul li img {
+    transition: all 1s;
+    transform: scale(1)
+}
+
+.ul li img:hover {
+    transform: scale(1.2);
+}
+
+.ul div p {
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    height: 19px;
+    line-height: 19px;
+}
+
+.botton-main {
+    height: 450px;
+    position: relative;
+}
+
+.botton-main video {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    display: inline-block;
+}
+
+.nava1-in {
+    position: absolute;
+    display: inline-block;
+    width: 35%;
+    height: 400px;
+    top: 5%;
+    right: 4%;
+}
+
+.nava1-in ul {
+    width: 100%;
+}
+
+.nava1-in ul b {
+    padding: 20px 0px 20px 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nava1-in ul div {
+    list-style-type: none;
+    width: 90%;
+    height: 80%;
+    margin-left: 14%;
+}
+
+.nava1-in ul div li {
+    line-height: 300%;
+}
+
+.nava1-in ul div li:hover {
+    text-decoration: underline;
+}
+
+.b {
+    width: 25%;
+    height: 100px;
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 150px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.b:link {
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: black
+}
+
+.b:visited {
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: black
+}
+
+.c:link {
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: black;
+    font-size: 18px;
+}
+
+.c:visited {
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: black;
+    font-size: 18px;
+}
+
+.d:link {
+    color: rgb(113, 113, 113);
+    font-size: 14px
+}
+
+.d:visited {
+    color: rgb(113, 113, 113);
+    font-size: 14px
+}
+
+.e:link {
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: black;
+}
+
+.e:visited {
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: black;
+}
+
+.f:link {
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: black;
+}
+
+.f:visited {
+    text-decoration: none;
+    font-family: "微软雅黑";
+    color: black;
+}

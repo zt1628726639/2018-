@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>摄影</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        input {
+            border: 1px solid #ccc;
+            padding: 7px 0px;
+            border-radius: 3px;
+            padding-left: 5px;
+        }
+        
+        input:focus {
+            border-color: #66afe9;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+        }
+    </style>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div class="header">
+        <div id="search">
+            <div class="box1">
+                <a class='alt' href="#">
+                    <input type="text" height="18px" name="search" placeholder="我只是个摆设">
+                    <img id="img-1" src="pic/search.png" alt="" width="18px">
+                </a>
+            </div>
+            <div class="box">登录</div>
+            <div class="box">注册</div>
+        </div>
+        <div class="logo">
+            <img src="pic/logo.png" alt="">
+        </div>
+    </div>
+    <div class="list" width="100%" align="center">
+        <ul class="li">
+            <li class="a"><a class="c" href="#">器材</a>
+                <div class="xs">
+                    <div class="xiao"></div>
+                    <div class="big">
+                        <table>
+                            <tr>
+                                <td><a href="#">动态</a></td>
+                                <td><a href="#">烧机</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">观点</a></td>
+                                <td><a href="#">评测</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">图鉴</a></td>
+                                <td><a href="#">器材库</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">专题</a></td>
+                                <td><a href="#">推荐</a></td>
+                            </tr>
+                        </table>
+                        <div class="box4" id="b-1"></div>
+                        <div class="box5" id="b-2"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="a"><a class="c" href="#">影像</a>
+                <div class="xs">
+                    <div class="xiao"></div>
+                    <div class="big">
+                        <table>
+                            <tr>
+                                <td><a href="#">新闻</a></td>
+                                <td><a href="#">知了</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">展览</a></td>
+                                <td><a href="#">专访</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">视界</a></td>
+                                <td><a href="#">影像馆</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">专题</a></td>
+                                <td>
+                                    <a href="#"> </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="box4" id="c-1"></div>
+                        <div class="box5" id="c-2"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="a"><a class="c" href="#">行色</a>
+                <div class="xs">
+                    <div class="xiao"></div>
+                    <div class="big">
+                        <table>
+                            <tr>
+                                <td><a href="#">头条</a></td>
+                                <td><a href="#">大片</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">攻略</a></td>
+                                <td><a href="#">驾到</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">行记</a></td>
+                                <td><a href="#">摄影师</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">专题</a></td>
+                                <td>
+                                    <a href="#"> </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="box4" id="d-1"></div>
+                        <div class="box5" id="d-2"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="a"><a class="c" href="#">论坛</a>
+                <div class="xs">
+                    <div class="xiao"></div>
+                    <div class="big">
+                        <table>
+                            <tr>
+                                <td><a href="#">摄影论坛</a></td>
+                                <!-- <td><a href="#">烧机</a></td> -->
+                            </tr>
+                            <tr>
+                                <td><a href="#">二手论坛</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">图片论坛</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#"> </a>
+                                </td>
+                                <td>
+                                    <a href="#"> </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="box4" id="e-1"></div>
+                        <div class="box5" id="e-2"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="a"><a class="c" href="#">她影像</a>
+                <div class="xs">
+                    <div class="xiao"></div>
+                    <div class="big">
+                        <table>
+                            <tr>
+                                <td><a href="#">早茶</a></td>
+                                <td><a href="#">下午茶</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">美丽说</a></td>
+                                <td><a href="#">她学院</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">她视觉</a></td>
+                                <td><a href="#">闺蜜圈</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">专题</a></td>
+                                <td><a href="#">她在这里</a></td>
+                            </tr>
+                        </table>
+                        <div class="box4" id="f-1"></div>
+                        <div class="box5" id="f-2"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <input type="radio" name="b" id="img1" checked/>
+            <div class="control">
+                <div class="image"><img class="pic1" src="pic/922.jpg" /></div>
+            </div>
+            <input type="radio" name="b" class="pic1" id="img2" />
+            <div class="control">
+                <div class="image"><img class="pic1" src="pic/923.jpg" /></div>
+            </div>
+            <input type="radio" name="b" id="img3" />
+            <div class="control">
+                <div class="image"><img class="pic1" src="pic/daoying-008.jpg" /></div>
+            </div>
+            <input type="radio" name="b" id="img4" />
+            <div class="control">
+                <div class="image"><img class="pic1" src="pic/xiagu-016.jpg" /></div>
+            </div>
+            <input type="radio" name="b" id="img5" />
+            <div class="control">
+                <div class="image"><img class="pic1" src="pic/xingkong-008.jpg" /></div>
+            </div>
+            <input type="radio" name="b" id="img6" />
+            <div class="control">
+                <div class="image"><img class="pic1" src="pic/daoying-004.jpg" /></div>
+            </div>
+            <div class="dots">
+                <label for="img1" class="dot" id="dot1"></label>
+                <label for="img2" class="dot" id="dot2"></label>
+                <label for="img3" class="dot" id="dot3"></label>
+                <label for="img4" class="dot" id="dot4"></label>
+                <label for="img5" class="dot" id="dot5"></label>
+                <label for="img6" class="dot" id="dot6"></label>
+            </div>
+            <div class="box-letter">精选美图</div>
+        </div>
+        <div class="main-right">
+            <div class="box-in">
+                <a href="#"><img src="pic/7582_29151908_1_lit.jpg" alt="" width="100%" height="100%"></a>
+                <div class="box-letter">小身材大能量</div>
+            </div>
+            <div class="box-in">
+                <a href="#"><img src="pic/7582-1Z522150Z2.jpg" alt="" width="100%" height="100%"></a>
+                <div class="box-letter">小身材大能量</div>
+            </div>
+            <div class="box-in">
+                <a href="#"><img src="pic/7583-1Z530143I2-50.jpg" alt="" width="100%" height="100%"></a>
+                <div class="box-letter">小身材大能量</div>
+            </div>
+            <div class="box-in">
+                <a href="#"><img src="pic/61-1Z52G11159.jpg" alt="" width="100%" height="100%"></a>
+                <div class="box-letter">小身材大能量</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="text">
+        <ul>
+            <li><a class="d" href="#">索大好专区</a></li>
+            <li><a class="d" href="#">中信银行爱摄影联盟</a></li>
+            <li><a class="d" href="#">专业就是EOS</a></li>
+            <li><a class="d" href="#">她影像专区</a></li>
+            <li><a class="d" href="#">新锐摄影奖</a></li>
+        </ul>
+    </div>
+    <div class="nava">
+        <ul class="ul">
+            <div>
+                <p><a href="#" class="e">|图鉴|</a></p>
+                <li><img src="pic/li-1.png" alt=""></li>
+                <p><a href="#" class="e">人像镜头</a></p>
+            </div>
+            <div>
+                <p><a href="#" class="e">|图鉴|</a></p>
+                <li><img src="pic/li-2.png" alt=""></li>
+                <p><a href="#" class="e">人像镜头</a></p>
+            </div>
+            <div>
+                <p><a href="#" class="e">|图鉴|</a></p>
+                <li><img src="pic/li-3.png" alt=""></li>
+                <p><a href="#" class="e">人像镜头</a></p>
+            </div>
+            <div>
+                <p><a href="#" class="e">|图鉴|</a></p>
+                <li><img src="pic/li-4.png" alt=""></li>
+                <p><a href="#" class="e">人像镜头</a></p>
+            </div>
+        </ul>
+        <ul class="ul">
+            <div>
+                <p><a href="#" class="e">|图鉴|</a></p>
+                <li><img src="pic/li-5.png" alt=""></li>
+                <p><a href="#" class="e">人像镜头</a></p>
+            </div>
+            <div>
+                <p><a href="#" class="e">|图鉴|</a></p>
+                <li><img src="pic/li-6.png" alt=""></li>
+                <p><a href="#" class="e">人像镜头</a></p>
+            </div>
+            <div>
+                <p><a href="#" class="e">|图鉴|</a></p>
+                <li><img src="pic/li-7.png" alt=""></li>
+                <p><a href="#" class="e">人像镜头</a></p>
+            </div>
+            <div>
+                <p><a href="#" class="e">|图鉴|</a></p>
+                <li><img src="pic/li-8.png" alt=""></li>
+                <p><a href="#" class="e">人像镜头</a></p>
+            </div>
+        </ul>
+    </div>
+    <div class="botton-main">
+        <video src="pic/0.mp4" width="60%" height="400px" autoplay muted loop></video>
+        <div class="nava1-in">
+            <ul>
+                <b>新闻</b>
+                <div>
+                    <li> <a class="f" href="#">媲美尼康旗舰D5 尼康高速无反新品或命名Z9</a></li>
+                    <li> <a class="f" href="#">2020万像素1寸传感器 佳能G5 X Mark II将发布</a> </li>
+                    <li> <a class="f" href="#">专业的色彩表现 飞利浦328P6VU显示器评测</a></li>
+                    <li> <a class="f" href="#">东京暴走拍一亿像素 富士GFX 100简单体验</a></li>
+                    <li> <a class="f" href="#">撒娇卖萌专业户 和一只秋田犬的户外旅游</a></li>
+                    <li> <a class="f" href="#">草原原住居民的闲适 萌态迸发的野生动物</a></li>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="foot">
+        <div class="div">
+            <img id="foot-logo" src="pic/foot-logo.png" alt="">
+            <ul class="foot-ul1">
+                <li>色影无忌</li>
+                <li>关于我们</li>
+                <li>友情链接</li>
+                <li>网站声明</li>
+            </ul>
+            <ul class="foot-ul2">
+                <li>色影无忌</li>
+                <li>关于我们</li>
+                <li>友情链接</li>
+                <li>网站声明</li>
+            </ul>
+            <img class="end" src="pic/end1.jpg" alt="" width="120px" height="120px">
+            <img class="end" src="pic/end2.jpg" alt="" width="120px" height="120px">
+        </div>
+        <hr color="silver">
+        <b>&copy;by 朱涛-1604030118</b>
+    </div>
+</body>
